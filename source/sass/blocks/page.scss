@@ -1,0 +1,18 @@
+.page {
+  height: 100%;
+  font-family: "PT Mono", monospace;;
+  font-size: 16px;
+  line-height: 134.4%;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  background-color: $ordinary-white;
+  color: $text-grey-color;
+  position: relative;
+}
