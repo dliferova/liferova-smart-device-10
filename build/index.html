@@ -14,72 +14,76 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <nav class="page-header__navigation site-navigation">
-      <div class="site-navigation__logo">
-        <picture>
-          <img src="img/icon-logo-desktop.svg" width="202" height="52" alt="Логотип Smart Device">
-        </picture>
-      </div>
-      <div class="site-navigation__contacts">
-        <div class="contacts">
-          <div class="contacts__mail-container">
-            <a href="info@sd.ru">info@sd.ru</a>
-          </div>
-          <div class="contacts__phone-container">
-            <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+    <nav class="page-header__navigation">
+      <div class="site-navigation">
+        <div class="site-navigation__logo">
+          <picture>
+            <img src="img/icon-logo-desktop.svg" width="202" height="52" alt="Логотип Smart Device">
+          </picture>
+        </div>
+        <div class="site-navigation__contacts">
+          <div class="contacts">
+            <div class="contacts__wrapper">
+              <div class="contacts__mail-container">
+                <a href="info@sd.ru">info@sd.ru</a>
+              </div>
+              <div class="contacts__phone-container">
+                <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="site-navigation__call-back">
-        <div class="call-back-form">
-          <button type="button">
-            <span>Заказать звонок</span>
-          </button>
-          <div class="call-back-form__container">
-            <form class="call-back-form__form" method="post" action="https://echo.htmlacademy.ru">
-              <div class="call-back-form__wrapper">
-                <button>
-                  <svg class="call-back-form__icon-cross" width="17" height="17">
-                    <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
-                  </svg>
-                </button>
-                <p>Закажите звонок</p>
-                <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-                <ul class="call-back-form__list">
-                  <li class="call-back-form__field-item">
-                    <label for="name-field"></label>
-                    <input type="text" id="name-field" placeholder="Имя" name="user-name" required="">
-                  </li>
-                  <li class="call-back-form__field-item">
-                    <label for="phone-field"></label>
-                    <input type="tel" id="phone-field" placeholder="Телефон" name="phone" required="">
-                  </li>
-                  <li class="call-back-form__field-item">
-                    <label for="question-text"></label>
-                    <textarea placeholder="Ваш вопрос" id="question-text" name="question" required="">
+        <div class="site-navigation__call-back">
+          <div class="call-back-form">
+            <button class="call-back-form__button button button_theme_transparent" type="button">
+              Заказать звонок
+            </button>
+            <div class="call-back-form__container visually-hidden">
+              <form class="call-back-form__form" method="post" action="https://echo.htmlacademy.ru">
+                <div class="call-back-form__wrapper">
+                  <button>
+                    <svg class="call-back-form__icon-cross" width="17" height="17">
+                      <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+                    </svg>
+                  </button>
+                  <p>Закажите звонок</p>
+                  <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+                  <ul class="call-back-form__list">
+                    <li class="call-back-form__field-item">
+                      <label for="name-field"></label>
+                      <input type="text" id="name-field" placeholder="Имя" name="user-name" required="">
+                    </li>
+                    <li class="call-back-form__field-item">
+                      <label for="phone-field"></label>
+                      <input type="tel" id="phone-field" placeholder="Телефон" name="phone" required="">
+                    </li>
+                    <li class="call-back-form__field-item">
+                      <label for="question-text"></label>
+                      <textarea placeholder="Ваш вопрос" id="question-text" name="question" required="">
                     </textarea>
-                  </li>
-                  <li class="call-back-form__field-item">
-                    <div class="privacy-policy">
-                      <div class="privacy-policy__wrapper">
-                        <div>
-                          <label for="privacy-policy"></label>
-                          <input id="privacy-policy" type="checkbox" required="" value="Я согласен на обработку персональных данных">
-                        </div>
-                        <div>
-                          <p>Я согласен на обработку персональных данных</p>
+                    </li>
+                    <li class="call-back-form__field-item">
+                      <div class="privacy-policy">
+                        <div class="privacy-policy__wrapper">
+                          <div>
+                            <label for="privacy-policy"></label>
+                            <input id="privacy-policy" type="checkbox" required="" value="Я согласен на обработку персональных данных">
+                          </div>
+                          <div>
+                            <p>Я согласен на обработку персональных данных</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="call-back-form__field-item">
-                    <button type="submit">
-                      <span>Отправить</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </form>
+                    </li>
+                    <li class="call-back-form__field-item">
+                      <button type="submit">
+                        <span>Отправить</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

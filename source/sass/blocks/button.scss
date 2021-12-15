@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 12px;
+}
+
+.button_theme_transparent {
+  border: 1px solid $ordinary-white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+

@@ -1,0 +1,12 @@
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.site-navigation__logo {
+  height: 52px;
+  flex-grow: 3;
+}
