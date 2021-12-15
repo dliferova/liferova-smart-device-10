@@ -1,0 +1,77 @@
+.intro-content {
+  min-height: 950px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 684px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 648px;
+  }
+}
+
+.intro-content__wrapper {
+  max-width: 1490px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+    padding: 0 0 0 80px;
+    display: block;
+    position: relative;
+  }
+}
+
+.intro-content__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.intro-content__slogan {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px;
+}
+
+.intro-content__call-to-action-wrapper {
+  margin: 0 0 0 11%;
+}
+
+.intro-content__img-wrapper {
+  max-width: 705px;
+  height: 515px;
+  background-image: url("/img/component-mask.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  position: relative;
+
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    right: -20%;
+    bottom: 140px;
+    z-index: 10;
+    width: 518px;
+    height: 384px;
+  }
+}
+
+.intro-content__img-wrapper img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: $tablet-width-max) {
+    width: 470px;
+    left: 20%;
+  }
+}

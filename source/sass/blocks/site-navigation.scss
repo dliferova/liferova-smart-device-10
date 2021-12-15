@@ -4,9 +4,23 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    align-items: flex-start;
+  }
 }
 
 .site-navigation__logo {
   height: 52px;
   flex-grow: 3;
+}
+
+.site-navigation__logo img {
+  display: block;
+  height: auto;
+
+  @media (max-width: $mobile-width-only) {
+    width: 38px;
+    height: 38px;
+  }
 }

@@ -18,6 +18,7 @@
       <div class="site-navigation">
         <div class="site-navigation__logo">
           <picture>
+            <source media="(max-width: 767px)" srcset="img/icon-logo-mobile.svg">
             <img src="img/icon-logo-desktop.svg" width="202" height="52" alt="Логотип Smart Device">
           </picture>
         </div>
@@ -25,10 +26,14 @@
           <div class="contacts">
             <div class="contacts__wrapper">
               <div class="contacts__mail-container">
-                <a href="info@sd.ru">info@sd.ru</a>
+                <a href="info@sd.ru">
+                  <span>info@sd.ru</span>
+                </a>
               </div>
               <div class="contacts__phone-container">
-                <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+                <a href="tel:+74950005252">
+                  <span>+7 (495) 000 52 52</span>
+                </a>
               </div>
             </div>
           </div>
@@ -92,22 +97,28 @@
   <main class="page-main">
     <section class="page-main__intro">
       <h1 class="visually-hidden">Smart Device - умные технологии.</h1>
-      <div class="page-container">
         <div class="intro-content">
-          <div class="intro-content__slogan">
-            <p>Печатные платы</p>
-            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          </div>
-          <div class="intro-content__call-to-action-wrapper">
-            <a href="#">
-              <span>Получить бесплатную консультацию</span>
-            </a>
-          </div>
-          <div class="intro-content__img-wrapper">
-            <img src="img/main-img.png" width="705" height="515" alt="Промо плата">
+          <div class="intro-content__wrapper">
+            <div class="intro-content__column">
+              <div class="intro-content__slogan">
+                <div class="slogan">
+                  <p class="slogan__large-title">Печатные платы</p>
+                  <p class="slogan__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+                </div>
+              </div>
+              <div class="intro-content__call-to-action-wrapper">
+                <div class="call-to-action">
+                  <a href="#">
+                    <span>Получить бесплатную консультацию</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="intro-content__img-wrapper">
+              <img src="img/main-img.png" width="705" height="515" alt="Промо плата">
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <div class="page-main__sections-group">

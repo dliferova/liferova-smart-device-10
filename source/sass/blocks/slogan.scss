@@ -1,0 +1,42 @@
+.slogan__large-title {
+  font-size: 4vw;
+  letter-spacing: 3.7px;
+  line-height: initial;
+  font-weight: bold;
+  color: $ordinary-white;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 60px;
+  }
+}
+
+.slogan__description {
+  font-size: 22px;
+  line-height: 157%;
+  color: $ordinary-white;
+  font-weight: normal;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  max-width: 777px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+  }
+}
+
+.slogan__description::before {
+  content: "";
+  width: 66px;
+  height: 2px;
+  background-color: $ordinary-white;
+  margin: 0 28px 15px 0;
+
+  @media (max-width: $tablet-width-max) {
+    width: 33px;
+    margin: 0 15px 0 0;
+  }
+}
