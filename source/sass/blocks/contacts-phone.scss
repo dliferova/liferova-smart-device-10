@@ -1,0 +1,17 @@
+.contacts-phone a::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-right: 16px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    margin-right: 0;
+  }
+}
