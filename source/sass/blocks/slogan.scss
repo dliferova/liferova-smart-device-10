@@ -1,6 +1,6 @@
 .slogan__large-title {
-  font-size: 4vw;
-  letter-spacing: 3.7px;
+  font-size: 80px;
+  letter-spacing: 4.5px;
   line-height: initial;
   font-weight: bold;
   color: $ordinary-white;
@@ -30,10 +30,10 @@
 
 .slogan__description::before {
   content: "";
-  width: 66px;
+  width: 92px;
   height: 2px;
   background-color: $ordinary-white;
-  margin: 0 28px 15px 0;
+  margin: 17px 28px 15px 0;
 
   @media (max-width: $tablet-width-max) {
     width: 33px;

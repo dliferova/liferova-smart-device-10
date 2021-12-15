@@ -1,13 +1,16 @@
 .call-to-action a {
+  box-sizing: border-box;
   font-size: 16px;
+  font-weight: bold;
   line-height: inherit;
   font-family: "Roboto Condensed", sans-serif;
   color: $ordinary-white;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
   background-color: $main-blue;
   display: inline-flex;
-  padding: 17px 28px;
+  align-items: center;
+  padding: 17px 25px 17px 42px;
   border-radius: 5px;
-  text-align: center;
+  min-width: 407px;
 }
