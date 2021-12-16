@@ -1,1 +1,3 @@
-.footer-contacts__item
+.footer-contacts__list {
+  @include resetting-styles-list;
+}
