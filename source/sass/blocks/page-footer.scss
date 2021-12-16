@@ -1,0 +1,26 @@
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas: "logo navidation"
+                        "social navidation";
+  column-gap: 20px;
+  padding: 40px 0;
+}
+
+.page-footer__logo {
+  grid-area: logo;
+}
+
+.page-footer__social {
+  grid-area: social;
+  padding: 47px 12px 12px 0;
+}
+
+.page-footer__navigation {
+  grid-area: navidation;
+  justify-self: end;
+}
+
+.page-footer__bottom-section {
+  border-top: 1px solid rgba($grey-border, 0.2);
+}

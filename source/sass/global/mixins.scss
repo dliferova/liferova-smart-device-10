@@ -3,3 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin font-family-condensed {
+  font-family: "Roboto Condensed", sans-serif ;
+}
+
+@mixin font-family-pt-mono {
+  font-family: "PT Mono", monospace;
+}
