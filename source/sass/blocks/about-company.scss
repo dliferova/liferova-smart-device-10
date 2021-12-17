@@ -1,0 +1,55 @@
+.about-company__wrapper {
+  position: relative;
+  padding: 0 0 0 182px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
+.about-company__wrapper:after {
+  @media (min-width: $tablet-width-min) {
+    position: absolute;
+    content: "";
+    width: 167px;
+    height: 317px;
+    background-image: url("/img/icon-year-group.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: contain;
+    z-index: 5;
+    left: 0;
+    top: 0;
+  }
+}
+
+.about-company h2 {
+  @include font-family-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  margin: 0 0 40px;
+}
+
+.about-company p {
+  margin: 0 0 20px 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 50px 0;
+  }
+}
+
+.about-company p:last-child {
+  margin: 0;
+}
+
+.about-company__button {
+  color: $main-blue;
+  outline: 1px solid $main-blue;
+}
+
+.about-company__hidden-part {
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}

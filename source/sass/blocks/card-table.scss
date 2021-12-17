@@ -1,0 +1,13 @@
+.card-table__list {
+  @include resetting-styles-list;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
