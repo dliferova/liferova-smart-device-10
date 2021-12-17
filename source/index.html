@@ -202,21 +202,29 @@
     <section class="page-main__services">
       <div class="page-container">
         <div class="services">
-          <h2>Service Device предлагает следующие товары и услуги</h2>
-          <ul class="services__list vertical-cards-list">
-            <li class="vertical-cards-list__item">
-              <p>Производство печатных плат</p>
-              <button><span class="visually-hidden">Подробнее</span></button>
-            </li>
-            <li class="vertical-cards-list__item">
-              <p>Монтаж печатных плат</p>
-              <button><span class="visually-hidden">Подробнее</span></button>
-            </li>
-            <li class="vertical-cards-list__item">
-              <p>Комплектующие для светотехники</p>
-              <button><span class="visually-hidden">Подробнее</span></button>
-            </li>
-          </ul>
+          <div class="services__wrapper">
+            <h2>Service Device предлагает следующие товары и услуги</h2>
+            <ul class="services__list vertical-cards-list">
+              <li class="vertical-cards-list__item vertical-cards-list__item_theme_manufacturer">
+                <a class="vertical-cards-list__link " href="#">
+                  <span>Производство печатных плат</span>
+                  <button type="button"><span class="visually-hidden">Подробнее</span></button>
+                </a>
+              </li>
+              <li class="vertical-cards-list__item vertical-cards-list__item_theme_mount">
+                <a class="vertical-cards-list__link" href="#">
+                  <span>Монтаж печатных плат</span>
+                  <button type="button"><span class="visually-hidden">Подробнее</span></button>
+                </a>
+              </li>
+              <li class="vertical-cards-list__item vertical-cards-list__item_theme_light-equipment">
+                <a class="vertical-cards-list__link" href="#">
+                  <span>Комплектующие для светотехники</span>
+                  <button class="vertical-cards-list__button" type="button"><span class="visually-hidden">Подробнее</span></button>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -225,11 +233,8 @@
       <div class="page-container">
         <div class="write-back-content">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <div class="write-back-content__img">
-            <img src="img/paper-airplane.png" alt="Бумажный самолетик" width="511" height="288">
-          </div>
           <div class="write-back-content__form-wrapper">
-            <form class="call-back-form" method="post" action="https://echo.htmlacademy.ru">
+            <form class="write-back-content__form call-back-form" method="post" action="https://echo.htmlacademy.ru">
               <div class="call-back-form__wrapper">
                 <p>Остались вопросы? Задайте их нам</p>
                 <p>Мы проконсультируем Вас бесплатно</p>

@@ -1,0 +1,30 @@
+.services h2 {
+  @include font-family-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  color: $ordinary-white;
+  margin: 0 0 47px 0;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 32px;
+    max-width: 85%;
+  }
+}
+
+.services__list {
+  @include resetting-styles-list;
+}
+
+.services__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 290px;
+  }
+}

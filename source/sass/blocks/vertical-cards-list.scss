@@ -1,0 +1,55 @@
+.vertical-cards-list {
+  @include font-family-condensed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.vertical-cards-list__item {
+  width: 370px;
+  min-height: 620px;
+  background-color: $grey-color;
+  margin: 0 20px 20px 0;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    min-height: 256px;
+    margin: 0 0 46px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 30px 0;
+  }
+}
+
+.vertical-cards-list__item:last-child {
+  margin-right: 0;
+}
+
+.vertical-cards-list__link span {
+  color: $ordinary-white;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+//.vertical-cards-list__item_theme_manufacturer {
+//  background-image: url("/img/promo-1.jpg");
+//  background-repeat: no-repeat;
+//  object-fit: contain;
+//}
+//
+//.vertical-cards-list__item_theme_mount {
+//  background-image: url("/img/promo-2.jpg");
+//  background-repeat: no-repeat;
+//}
+//.vertical-cards-list__item_theme_light-equipment {
+//  background-image: url("/img/promo-3.jpg");
+//  background-repeat: no-repeat;
+//}
