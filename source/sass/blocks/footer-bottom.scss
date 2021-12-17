@@ -37,6 +37,10 @@
 
 .footer-bottom__item {
   margin-right: 142px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+  }
 }
 
 .footer-bottom__item:last-child {
