@@ -32,3 +32,23 @@
   color: $text-grey-color;
   margin: 0;
 }
+
+.card-item__icon {
+  transition: 2s;
+  fill: $main-blue;
+}
+
+.card-item:hover {
+  transition: 2s;
+  background-color: $main-blue;
+}
+
+.card-item:hover h3,
+.card-item:hover p {
+  transition: 2s;
+  color: $ordinary-white;
+}
+
+.card-item:hover .card-item__icon {
+  fill: $ordinary-white;
+}

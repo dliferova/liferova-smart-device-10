@@ -48,6 +48,11 @@
   outline: 1px solid $main-blue;
 }
 
+.about-company__button:hover {
+  color: $main-blue-darker;
+  outline: 1px solid $main-blue-darker;
+}
+
 .about-company__hidden-part {
   @media (max-width: $tablet-width-max) {
     display: none;
