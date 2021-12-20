@@ -10,7 +10,34 @@
   background-color: $main-blue;
   display: inline-flex;
   align-items: center;
+  text-align: center;
   padding: 17px 25px 17px 42px;
   border-radius: 5px;
-  min-width: 407px;
+  max-width: 407px;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 379px;
+    padding: 17px 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 287px;
+    padding: 15px 20px;
+  }
+}
+
+.call-to-action__text_mobile {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.call-to-action__text_desktop {
+  display: none;
+
+  @media (min-width: $tablet-width-min) {
+    display: block;
+  }
 }

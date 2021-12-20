@@ -1,8 +1,19 @@
 .page-main__intro {
   background-color: #1b2d37;
-  min-height: 878px;
   position: relative;
   z-index: 1;
+
+  @media (min-width: $desktop-width-min) {
+    min-height: 879px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 687px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 646px;
+  }
 }
 
 .page-main__intro::after {
@@ -30,6 +41,10 @@
 
 .page-main__advantages {
   margin-bottom: 110px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 60px;
+  }
 }
 
 .page-main__services {

@@ -9,6 +9,12 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    padding: 0;
+    max-width: 280px;
+  }
 }
 
 .feedback-form__form {
@@ -42,6 +48,11 @@
                         "button agreement";
   column-gap: 32px;
   row-gap: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .feedback-form__field-item_theme_textarea {
@@ -50,6 +61,12 @@
 
 .feedback-form__field-item_theme_button {
   grid-area: button;
+}
+
+.feedback-form__field-item_theme_privacy {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
 }
 
 .feedback-form__button {
