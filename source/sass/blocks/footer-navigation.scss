@@ -21,7 +21,7 @@
   display: grid;
   max-width: 534px;
   grid-template-columns: repeat(2, max-content);
-  column-gap: 65px;
+  column-gap: 72px;
 
   @media (max-width: $tablet-width-max) {
     display: block;
