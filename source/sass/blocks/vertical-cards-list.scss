@@ -33,23 +33,58 @@
   margin-right: 0;
 }
 
-.vertical-cards-list__link span {
+.vertical-cards-list__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    transition: all .5s ease-out;
+  }
+}
+
+.vertical-cards-list__link p {
   color: $ordinary-white;
   font-size: 20px;
   line-height: 30px;
+  max-width: 215px;
+  margin: 0;
+  padding: 53px 20px 20px 44px;
 }
 
-//.vertical-cards-list__item_theme_manufacturer {
-//  background-image: url("/img/promo-1.jpg");
-//  background-repeat: no-repeat;
-//  object-fit: contain;
-//}
-//
-//.vertical-cards-list__item_theme_mount {
-//  background-image: url("/img/promo-2.jpg");
-//  background-repeat: no-repeat;
-//}
-//.vertical-cards-list__item_theme_light-equipment {
-//  background-image: url("/img/promo-3.jpg");
-//  background-repeat: no-repeat;
-//}
+.vertical-cards-list__link {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+
+.vertical-cards-list__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 63px;
+  height: 63px;
+  background-color: $main-blue;
+  background-image: url("/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.vertical-cards-list__link_theme_manufacturer {
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-1.jpg");
+}
+
+.vertical-cards-list__link_theme_mount {
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-2.jpg");
+}
+
+.vertical-cards-list__link_theme__light-equipment {
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-3.jpg");
+}
