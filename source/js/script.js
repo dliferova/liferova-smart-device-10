@@ -1,5 +1,3 @@
-console.log('Hello')
-
 const phoneField = document.getElementById("question-phone-field");
 
 const phoneMask = IMask(
@@ -13,4 +11,3 @@ phoneField.addEventListener('focus', (evt) => {
     phoneMask.value = "+7("
   }
 })
-

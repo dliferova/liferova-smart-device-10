@@ -1,0 +1,61 @@
+.accordion-item__title {
+ display: inline-block;
+}
+
+.accordion-item__button {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    position: relative;
+  }
+}
+
+//Этот класс будет toggle
+
+.accordion-item__button_close::after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $grey-color;
+}
+
+.accordion-item__button_open::after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/icon-plus.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.accordion-item__content {
+  margin: 34px 0 0 0;
+}
+
+//Стартовое состояние accordion-item__button_open + accordion-item__content
+
+//При работоспособном JS y навешиваем этот стиль
+
+.accordion-item__content_hidden {
+  display: none;
+}
+
+// accordion-item + accordion-item__button_open
+
+// accordion-item__content_hidden + .accordion-item__button_close
