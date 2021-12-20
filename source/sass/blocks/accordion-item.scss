@@ -1,3 +1,10 @@
+.accordion-item {
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+}
+
 .accordion-item__title {
  display: inline-block;
 }
@@ -16,9 +23,17 @@
   }
 }
 
-//Этот класс будет toggle
+.accordion-item__content {
+  @media (max-width: $mobile-width-only) {
+    margin: 34px 0 0 0;
+  }
+}
 
-.accordion-item__button_close::after {
+.accordion-item_nojs > .accordion-item__button {
+  display: none;
+}
+
+.accordion-item_opened > .accordion-item__button::after {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -30,7 +45,7 @@
   background-color: $grey-color;
 }
 
-.accordion-item__button_open::after {
+.accordion-item_closed > .accordion-item__button::after {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -44,18 +59,8 @@
   background-repeat: no-repeat;
 }
 
-.accordion-item__content {
-  margin: 34px 0 0 0;
+.accordion-item_closed > .accordion-item__content {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
-
-//Стартовое состояние accordion-item__button_open + accordion-item__content
-
-//При работоспособном JS y навешиваем этот стиль
-
-.accordion-item__content_hidden {
-  display: none;
-}
-
-// accordion-item + accordion-item__button_open
-
-// accordion-item__content_hidden + .accordion-item__button_close

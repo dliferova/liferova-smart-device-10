@@ -5,10 +5,6 @@
   @media (max-width: $tablet-width-max) {
     min-height: 457px;
   }
-
-  @media (max-width: $mobile-width-only) {
-    min-height: 685px;
-  }
 }
 
 .page-footer:after {

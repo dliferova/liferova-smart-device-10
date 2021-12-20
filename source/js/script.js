@@ -11,3 +11,24 @@ phoneField.addEventListener('focus', (evt) => {
     phoneMask.value = "+7("
   }
 })
+
+//Реализация аккордеона
+const accordionSectionsItem = document.querySelector('.accordion-item_theme_sections');
+
+accordionSectionsItem.classList.remove('accordion-item_nojs');
+accordionSectionsItem.classList.add('accordion-item_closed');
+
+accordionSectionsItem.addEventListener('click', () => {
+  accordionSectionsItem.classList.toggle('accordion-item_closed');
+  accordionSectionsItem.classList.toggle('accordion-item_opened');
+})
+
+const accordionContactsItem = document.querySelector('.accordion-item_theme_contacts');
+
+accordionContactsItem.classList.remove('accordion-item_nojs');
+accordionContactsItem.classList.add('accordion-item_closed');
+
+accordionContactsItem.addEventListener('click', () => {
+  accordionContactsItem.classList.toggle('accordion-item_closed');
+  accordionContactsItem.classList.toggle('accordion-item_opened');
+})
