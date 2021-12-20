@@ -1,0 +1,59 @@
+.feedback-form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feedback-form__form {
+  grid-column-start: 2;
+  place-self: end;
+}
+
+.feedback-form__slogan {
+  @include font-family-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  color: $ordinary-white;
+  letter-spacing: 0.9px;
+  margin: 0 0 20px 0;
+}
+
+.feedback-form__text {
+  font-size: 16px;
+  line-height: 134%;
+  color: $ordinary-white;
+  margin: 0 0 40px 0;
+}
+
+.feedback-form__list {
+  @include resetting-styles-list;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "name phone"
+                        "textarea textarea"
+                        "button agreement";
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+.feedback-form__field-item_theme_textarea {
+  grid-area: textarea;
+}
+
+.feedback-form__field-item_theme_button {
+  grid-area: button;
+}
+
+.feedback-form__button {
+  color: $ordinary-white;
+  outline: 1px solid $ordinary-white;
+  width: 270px;
+}

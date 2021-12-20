@@ -1,0 +1,126 @@
+.form-field {
+  position: relative;
+}
+
+.form-field__input {
+  @include font-family-pt-mono;
+  width: 100%;
+  background-color: rgba($ordinary-white, 0.1);
+  border: none;
+  font-size: 16px;
+  line-height: 134%;
+  padding: 13px 16px;
+  cursor: pointer;
+  color: $ordinary-white;
+
+  &:hover {
+    outline: 1px solid $main-blue-darker;
+    background-color: rgba($main-blue-darker, 0.2);
+
+    &::placeholder {
+      color: $main-blue-darker;
+    }
+  }
+
+  &:focus {
+    color: $ordinary-white;
+    outline: 1px solid $main-blue-darker;
+    background-color: rgba($ordinary-white, 0.1);
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 1px solid $outline-error;
+  }
+}
+
+.form-field input::placeholder {
+  color: $ordinary-white;
+}
+
+.form-field input:focus::placeholder {
+  color: #ffffff;
+}
+
+.form-field__input-check {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.form-field__label-check {
+  cursor: pointer;
+  @include font-family-pt-mono;
+  font-size: 14px;
+  color: rgba($ordinary-white, 0.8);
+  position: relative;
+  display: grid;
+  padding: 10px 0 0 0;
+  grid-template-columns: max-content 1fr;
+  line-height: 100%;
+
+  &:hover {
+    color: $main-blue-darker;
+  }
+}
+
+.form-field__pseudo-check-input {
+  cursor: pointer;
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid $ordinary-white;
+  margin: 0 14px 0 0;
+}
+
+.form-field__label-check:hover > .form-field__pseudo-check-input {
+  border: 1px solid $main-blue-darker;
+}
+
+.form-field__input-check:checked + .form-field__label-check > .form-field__pseudo-check-input {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: url("/img/input-check.svg");
+  }
+}
+
+.feedback-form__textarea {
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  margin: 0;
+  min-height: 154px;
+  color: $ordinary-white;
+  background-color: rgba($ordinary-white, 0.1);
+  border: none;
+  padding: 10px 10px 0 15px;
+
+  &:hover {
+    outline: 1px solid $main-blue-darker;
+    background-color: rgba($main-blue-darker, 0.2);
+
+    &::placeholder {
+      color: $main-blue-darker;
+    }
+  }
+
+  &:focus {
+    color: #ffffff;
+    outline: 1px solid $main-blue-darker;
+    background-color: rgba($ordinary-white, 0.1);
+  }
+}
+
+.feedback-form__textarea::placeholder {
+  @include font-family-pt-mono;
+  font-size: 16px;
+  line-height: 134%;
+  color: $ordinary-white;
+}
