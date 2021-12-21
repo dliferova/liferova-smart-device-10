@@ -1,3 +1,4 @@
+//Реализация маски номера телефона в input
 const phoneField = document.getElementById("question-phone-field");
 
 const phoneMask = IMask(

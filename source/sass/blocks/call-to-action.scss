@@ -24,6 +24,16 @@
     max-width: 287px;
     padding: 15px 20px;
   }
+
+  &:hover,
+  &:focus {
+    transition: all .5s ease-out;
+    background-color: $main-blue-darker;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .call-to-action__text_mobile {

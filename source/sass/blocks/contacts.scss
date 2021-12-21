@@ -32,6 +32,15 @@
   display: inline-flex;
   align-items: center;
   padding: 5px;
+
+  &:hover,
+  &:focus {
+    color: $main-blue;
+  }
+
+  &:active {
+    color: $main-blue-darker;
+  }
 }
 
 .contacts__item span {

@@ -14,6 +14,15 @@
 .button_theme_transparent {
   border-radius: 5px;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    transition: all .5s ease-out;
+    outline: 1px solid $main-blue-darker;
+    background-color: rgba($main-blue-darker, 0.7);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
-
-
