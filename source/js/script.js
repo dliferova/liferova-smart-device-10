@@ -32,3 +32,15 @@ accordionContactsItem.addEventListener('click', () => {
   accordionContactsItem.classList.toggle('accordion-item_closed');
   accordionContactsItem.classList.toggle('accordion-item_opened');
 })
+
+// Реализация якорей
+const callToActionLink = document.querySelector('#link-to-feedback-form');
+
+const scrollTo = (elementClassToScroll) => {
+  document.querySelector(elementClassToScroll).scrollIntoView({behavior: "smooth"})
+}
+
+callToActionLink.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  scrollTo('.feedback-form');
+});
