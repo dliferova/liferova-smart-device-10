@@ -118,11 +118,12 @@
 
 //Форма
 
-.modal_closed {
+.modal {
   display: none;
 }
 
 .modal_showed {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
