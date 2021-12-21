@@ -38,76 +38,17 @@
             </div>
           </div>
         </div>
-        <div class="site-navigation__call-back">
-          <div class="call-back-form">
-            <button class="call-back-form__button button button_theme_transparent" type="button">
-              Заказать звонок
-            </button>
-            <div class="call-back-form__container visually-hidden">
-              <form class="call-back-form__form" method="post" action="https://echo.htmlacademy.ru">
-                <div class="call-back-form__wrapper">
-                  <button>
-                    <svg class="call-back-form__icon-cross" width="17" height="17">
-                      <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
-                    </svg>
-                  </button>
-                  <p>Закажите звонок</p>
-                  <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-                  <ul class="call-back-form__list">
-                    <li class="call-back-form__field-item">
-                      <label for="name-field"></label>
-                      <input type="text"
-                             id="name-field"
-                             placeholder="Имя"
-                             name="user-name"
-                             required>
-                    </li>
-                    <li class="call-back-form__field-item">
-                      <label for="phone-field"></label>
-                      <input type="tel"
-                             id="phone-field"
-                             placeholder="Телефон"
-                             name="phone"
-                             required>
-                    </li>
-                    <li class="call-back-form__field-item">
-                      <label for="question-text"></label>
-                      <textarea placeholder="Ваш вопрос"
-                                id="question-text"
-                                name="question"
-                                required>
-                    </textarea>
-                    </li>
-                    <li class="call-back-form__field-item">
-                      <div class="privacy-policy">
-                        <div class="privacy-policy__wrapper">
-                          <div>
-                            <label for="privacy-policy"></label>
-                            <input id="privacy-policy" type="checkbox" required value="Я согласен на обработку персональных данных">
-                          </div>
-                          <div>
-                            <p>Я согласен на обработку персональных данных</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="call-back-form__field-item">
-                      <button type="submit">
-                        <span>Отправить</span>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </form>
-            </div>
-          </div>
+        <div class="site-navigation__feedback-button-wrapper">
+          <button class="feedback-button button button_theme_transparent" type="button">
+            Заказать звонок
+          </button>
         </div>
       </div>
     </nav>
   </header>
   <main class="page-main">
+    <h1 class="visually-hidden">Smart Device - умные технологии.</h1>
     <section class="page-main__intro">
-      <h1 class="visually-hidden">Smart Device - умные технологии.</h1>
       <div class="page-container">
         <div class="intro-content">
           <div class="intro-content__wrapper">
@@ -123,6 +64,71 @@
                   <span class="call-to-action__text call-to-action__text_desktop">Получить бесплатную консультацию</span>
                   <span class="call-to-action__text call-to-action__text_mobile">Бесплатная консультация</span>
                 </a>
+              </div>
+            </div>
+          </div>
+          <div class="intro-content__feedback-form">
+            <div class="feedback-form feedback-form_modal feedback-form_modal_close">
+              <button class="feedback-form__modal-close-button">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite_auto.svg#icon-cross" x="0" y="0"></use>
+                </svg>
+              </button>
+              <div class="feedback-form__container">
+                <form class="feedback-form__form" method="post" action="https://echo.htmlacademy.ru">
+                  <fieldset class="feedback-form__fieldset">
+                    <legend class="visually-hidden">Личные данные пользователя</legend>
+                    <p class="feedback-form__slogan">Закажите звонок</p>
+                    <p class="feedback-form__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+                    <ul class="feedback-form__list feedback-form__list_modal-element">
+                      <li class="feedback-form__field-item feedback-form__field-item_theme_name">
+                        <label for="name-field"></label>
+                        <div class="form-field">
+                          <input class="form-field__input" type="text"
+                                 id="name-field"
+                                 placeholder="Имя"
+                                 name="user-name"
+                                 required>
+                        </div>
+                      </li>
+                      <li class="feedback-form__field-item feedback-form__field-item_theme_phone">
+                        <label for="phone-field"></label>
+                        <div class="form-field">
+                          <input class="form-field__input" type="tel"
+                                 id="phone-field"
+                                 placeholder="Телефон"
+                                 name="phone"
+                                 required>
+                        </div>
+                      </li>
+                      <li class="form-field feedback-form__field-item feedback-form__field-item_theme_textarea">
+                        <div class="feedback-form__textarea-block">
+                          <label class="feedback-form__textarea-label" for="question-text"></label>
+                          <textarea class="feedback-form__textarea" id="question-text" name="question" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                      </li>
+                      <li class="form-field feedback-form__field-item feedback-form__field-item_theme_privacy">
+                        <div class="form-field">
+                          <input class="form-field__input form-field__input-check visually-hidden"
+                                 id="privacy-policy"
+                                 name="agreement-privacy"
+                                 type="checkbox"
+                                 value="Согласен на обработку персональных данных"
+                                 required
+                          >
+                          <label class="form-field__label-check" for="privacy-policy">
+                            <span class="form-field__pseudo-check-input"></span>
+                            Я согласен на обработку персональных данных
+                          </label>
+                        </div>
+                      </li>
+                      <li class="feedback-form__field-item feedback-form__field-item_theme_button">
+                        <button class="button button_theme_transparent feedback-form__button" type="submit">Отправить</button>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
               </div>
             </div>
           </div>
@@ -239,7 +245,7 @@
                 <legend class="visually-hidden">Личные данные пользователя</legend>
                 <p class="feedback-form__slogan">Остались вопросы? Задайте их нам</p>
                 <p class="feedback-form__text">Мы проконсультируем Вас бесплатно</p>
-                <ul class="feedback-form__list">
+                <ul class="feedback-form__list feedback-form__list_independent-element">
                   <li class="feedback-form__field-item feedback-form__field-item_theme_name">
                     <label for="question-name-field"></label>
                     <div class="form-field">

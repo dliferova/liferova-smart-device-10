@@ -16,6 +16,10 @@
   }
 }
 
+.page-main__intro_disabled {
+  opacity: 0.9;
+}
+
 .page-main__intro::after {
   content: "";
   width: 100%;

@@ -55,28 +55,9 @@
   }
 }
 
-//.intro-content__wrapper:after {
-//  content: "";
-//  width: 720px;
-//  height: 523px;
-//  position: absolute;
-//  background-image: url("/img/main-img.png");
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//  right: 0;
-//  top: 0;
-//  z-index: 2;
-//}
-//
-//.intro-content__wrapper::before {
-//  content: "";
-//  width: 623px;
-//  height: 494px;
-//  background-image: url("/img/triangles-group.png");
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//  position: absolute;
-//  top: 0;
-//  right: 0;
-//  z-index: 1;
-//}
+.intro-content__feedback-form {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%)translateX(50%);
+}

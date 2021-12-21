@@ -41,6 +41,9 @@
 
 .feedback-form__list {
   @include resetting-styles-list;
+}
+
+.feedback-form__list_independent-element {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "name phone"
@@ -72,5 +75,67 @@
 .feedback-form__button {
   color: $ordinary-white;
   outline: 1px solid $ordinary-white;
-  width: 270px;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+//Форма в модальном окне
+
+.feedback-modal_opened {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%)translateY(-50%);
+}
+
+.feedback-form_modal {
+  width: 490px;
+  height: 605px;
+  background-color: $main-blue;
+  position: relative;
+}
+
+.feedback-form_modal .feedback-form__slogan {
+  font-size: 28px;
+  line-height: 140%;
+}
+
+.feedback-form_modal .feedback-form__text {
+  max-width: 390px;
+}
+
+.feedback-form__container {
+  padding: 33px 38px 36px;
+}
+
+.feedback-form__list_modal-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__list_modal-element .feedback-form__field-item_theme_privacy {
+  order: 1;
+}
+
+.feedback-form_modal .form-field {
+  margin: 0 0 20px;
+}
+
+.feedback-form__modal-close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.feedback-form_modal_close {
+  display: none;
 }

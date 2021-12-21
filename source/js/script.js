@@ -45,3 +45,30 @@ callToActionLink.addEventListener('click', (evt) => {
   evt.preventDefault();
   scrollTo('.feedback-form');
 });
+
+//Реализация поп-апа
+const feedbackButton = document.querySelector('.feedback-button');
+const feedbackFormModal = document.querySelector('.feedback-form_modal');
+const feedbackCloseModalButton = document.querySelector('.feedback-form__modal-close-button');
+const modalWrapper = document.querySelector('.page-main__intro');
+
+const modalAddCloseClass = () => {
+  feedbackFormModal.classList.add('feedback-form_modal_close');
+}
+
+const onEscClose = (evt) => {
+  if (evt.key === 'Escape' || evt.key === 'Esc') {
+    evt.preventDefault();
+    modalAddCloseClass();
+  }
+}
+
+feedbackButton.addEventListener('click', () => {
+  feedbackFormModal.classList.remove('feedback-form_modal_close');
+  modalWrapper.classList.add('hide-overflow');
+  document.body.classList.add('hide-overflow');
+})
+
+feedbackCloseModalButton.addEventListener('click', modalAddCloseClass);
+
+document.addEventListener('keydown', onEscClose);
