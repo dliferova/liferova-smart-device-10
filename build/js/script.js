@@ -50,25 +50,26 @@ callToActionLink.addEventListener('click', (evt) => {
 const feedbackButton = document.querySelector('.feedback-button');
 const feedbackFormModal = document.querySelector('.feedback-form_modal');
 const feedbackCloseModalButton = document.querySelector('.feedback-form__modal-close-button');
-const modalWrapper = document.querySelector('.page-main__intro');
+const modalWrapper = document.querySelector('.modal');
 
-const modalAddCloseClass = () => {
+const modalClose = () => {
+  modalWrapper.classList.add('modal_closed');
   feedbackFormModal.classList.add('feedback-form_modal_close');
+}
+
+const modalOpen = () => {
+  modalWrapper.classList.add('modal_showed');
+  feedbackFormModal.classList.remove('feedback-form_modal_close');
 }
 
 const onEscClose = (evt) => {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
     evt.preventDefault();
-    modalAddCloseClass();
+    modalClose();
   }
 }
 
-feedbackButton.addEventListener('click', () => {
-  feedbackFormModal.classList.remove('feedback-form_modal_close');
-  modalWrapper.classList.add('hide-overflow');
-  document.body.classList.add('hide-overflow');
-})
-
-feedbackCloseModalButton.addEventListener('click', modalAddCloseClass);
-
+feedbackButton.addEventListener('click', modalOpen);
+feedbackCloseModalButton.addEventListener('click', modalClose);
 document.addEventListener('keydown', onEscClose);
+modalWrapper.addEventListener('click', modalClose);

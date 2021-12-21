@@ -1,0 +1,8 @@
+.feedback-button button {
+  color: $ordinary-white;
+  outline: 1px solid $ordinary-white;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
