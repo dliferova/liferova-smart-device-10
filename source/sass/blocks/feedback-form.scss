@@ -9,12 +9,49 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     display: block;
     padding: 0;
     max-width: 280px;
   }
+}
+
+.feedback-form__wrapper:before {
+  content: "";
+  width: 486px;
+  height: 278px;
+  background-image: url("/img/paper-airplane.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 13%;
+  left: 0;
+  z-index: 2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/paper-airplane@2x.png");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.feedback-form__wrapper:after {
+  content: "";
+  width: 613px;
+  height: 637px;
+  background-image: url("/img/Component 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -31%;
+  left: -15%;
+  z-index: 1;
 }
 
 .feedback-form__form {

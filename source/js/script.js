@@ -43,7 +43,7 @@ const scrollTo = (elementClassToScroll) => {
 
 callToActionLink.addEventListener('click', (evt) => {
   evt.preventDefault();
-  scrollTo('.feedback-form');
+  scrollTo('.feedback-form_scroll-to');
 });
 
 //Реализация поп-апа

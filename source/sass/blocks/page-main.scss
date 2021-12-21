@@ -64,4 +64,39 @@
   background-color: $main-blue;
   min-height: 670px;
   padding: 93px 0 45px;
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.page-main__feedback:before {
+  @media (min-width: $desktop-width-min) {
+    content: "";
+    width: 173px;
+    height: 207px;
+    top: 63px;
+    right: 3%;
+    position: absolute;
+    background-image: url("/img/triangle-simple.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    transform: rotate(-240deg);
+  }
+}
+
+.page-main__feedback:after {
+  @media (min-width: $desktop-width-min) {
+    content: "";
+    width: 281px;
+    height: 254px;
+    bottom: 11%;
+    right: 1%;
+    position: absolute;
+    background-image: url("/img/triangle-simple.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    transform: rotate(-60deg);
+  }
 }
