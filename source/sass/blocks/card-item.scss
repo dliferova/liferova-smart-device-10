@@ -12,9 +12,12 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     max-width: 290px;
     min-height: 232px;
-    padding: 25px 13px 20px 25px;
+    padding: 25px 12px 20px 25px;
   }
 }
 

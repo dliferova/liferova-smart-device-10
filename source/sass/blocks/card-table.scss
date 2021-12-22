@@ -18,4 +18,8 @@
   @media (max-width: $tablet-width-max) {
    margin: 0;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 7px 0;
+  }
 }

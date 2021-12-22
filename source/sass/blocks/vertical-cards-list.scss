@@ -54,6 +54,10 @@
   @media (max-width: $tablet-width-max) {
     padding: 42px 20px 20px 44px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 21px 20px 20px 34px;
+  }
 }
 
 .vertical-cards-list__link {

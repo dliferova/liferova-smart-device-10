@@ -33,21 +33,21 @@
   @media (max-width: $tablet-width-max) {
     font-size: 34px;
   }
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 28px;
+  }
 }
 
 .about-company p {
   margin: 0 0 20px 0;
 
   @media (max-width: $mobile-width-only) {
-    margin: 0 0 50px 0;
-  }
-}
+    margin: 0 0 44px 0;
 
-.about-company p:last-child {
-  margin: 0;
-
-  @media (max-width: $tablet-width-max) {
-    margin: 0 0 34px;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
