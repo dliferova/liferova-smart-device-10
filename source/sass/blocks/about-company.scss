@@ -28,7 +28,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 140%;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 .about-company p {
@@ -46,6 +46,7 @@
 .about-company__button {
   color: $main-blue;
   outline: 1px solid $main-blue;
+  width: 180px;
 }
 
 .about-company__button:hover {

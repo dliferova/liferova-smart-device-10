@@ -2,7 +2,7 @@
   @include font-family-condensed;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width-max) {
@@ -14,9 +14,9 @@
 
 .vertical-cards-list__item {
   width: 370px;
-  min-height: 620px;
+  min-height: 624px;
   background-color: $grey-color;
-  margin: 0 20px 20px 0;
+  margin: 0 30px 20px 0;
 
   @media (max-width: $tablet-width-max) {
     width: 100%;

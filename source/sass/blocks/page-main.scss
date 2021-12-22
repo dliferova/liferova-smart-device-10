@@ -54,7 +54,7 @@
 
 .page-main__services {
   background-color: $dark-background;
-  padding: 93px 0 127px;
+  padding: 93px 0 107px;
 
   @media (max-width: $mobile-width-only) {
     padding: 53px 0 64px;
@@ -73,15 +73,14 @@
 .page-main__feedback:before {
   @media (min-width: $desktop-width-min) {
     content: "";
-    width: 173px;
-    height: 207px;
+    width: 198px;
+    height: 212px;
     top: 63px;
     right: 3%;
     position: absolute;
     background-image: url("/img/triangle-simple.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 3;
+    background-size: contain;
     transform: rotate(-240deg);
   }
 }
@@ -89,15 +88,14 @@
 .page-main__feedback:after {
   @media (min-width: $desktop-width-min) {
     content: "";
-    width: 281px;
-    height: 254px;
-    bottom: 11%;
-    right: 1%;
+    width: 283px;
+    height: 323px;
+    bottom: 0;
+    right: 0;
     position: absolute;
     background-image: url("/img/triangle-simple.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    z-index: 3;
     transform: rotate(-60deg);
   }
 }
