@@ -27,6 +27,7 @@
 
 .accordion-item__content {
   @media (max-width: $mobile-width-only) {
+    grid-column: 1/2;
     margin: 34px 0 0 0;
   }
 }

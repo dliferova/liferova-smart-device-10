@@ -16,24 +16,42 @@ phoneInputs.forEach(input => {
 })
 
 //Реализация аккордеона
-const accordionSectionsItem = document.querySelector('.accordion-item_theme_sections');
+const accordionItems = document.querySelectorAll('.accordion-item')
 
-accordionSectionsItem.classList.remove('accordion-item_nojs');
-accordionSectionsItem.classList.add('accordion-item_closed');
+const accordionItemsGroup = {}
+let openedItem = null;
 
-accordionSectionsItem.addEventListener('click', () => {
-  accordionSectionsItem.classList.toggle('accordion-item_closed');
-  accordionSectionsItem.classList.toggle('accordion-item_opened');
-})
+const openItem = (element) => {
+  element.classList.remove('accordion-item_closed');
+  element.classList.add('accordion-item_opened');
+}
 
-const accordionContactsItem = document.querySelector('.accordion-item_theme_contacts');
+const closeItem = (element) => {
+  element.classList.add('accordion-item_closed');
+  element.classList.remove('accordion-item_opened');
+}
 
-accordionContactsItem.classList.remove('accordion-item_nojs');
-accordionContactsItem.classList.add('accordion-item_closed');
+const onItemClick = (item) => {
+  if (openedItem && openedItem === item.id) {
+    closeItem(item)
+    openedItem = null;
+  } else if (openedItem && openedItem !== item.id) {
+    closeItem(accordionItemsGroup[openedItem])
+    openItem(item)
+    openedItem = item.id
+  } else {
+    openItem(item)
+    openedItem = item.id
+  }
+}
 
-accordionContactsItem.addEventListener('click', () => {
-  accordionContactsItem.classList.toggle('accordion-item_closed');
-  accordionContactsItem.classList.toggle('accordion-item_opened');
+accordionItems.forEach(item => {
+  accordionItemsGroup[item.id] = item;
+  item.classList.remove('accordion-item_nojs');
+  item.classList.add('accordion-item_closed');
+  item.addEventListener('click', (evt) => {
+    onItemClick(item)
+  })
 })
 
 // Реализация якорей
