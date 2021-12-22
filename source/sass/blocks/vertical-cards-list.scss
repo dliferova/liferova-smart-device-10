@@ -50,6 +50,10 @@
   max-width: 215px;
   margin: 0;
   padding: 53px 20px 20px 44px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 42px 20px 20px 44px;
+  }
 }
 
 .vertical-cards-list__link {

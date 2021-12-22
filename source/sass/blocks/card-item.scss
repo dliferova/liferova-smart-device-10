@@ -6,6 +6,11 @@
   min-height: 299px;
   padding: 40px 43px 49px;
 
+  @media (max-width: $tablet-width-max) {
+    min-height: auto;
+    padding: 24px 23px 20px;
+  }
+
   @media (max-width: $mobile-width-only) {
     max-width: 290px;
     min-height: 232px;
@@ -20,6 +25,10 @@
   font-size: 24px;
   line-height: 140%;
   margin: 0 0 15px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 0 12px;
+  }
 
   @media (max-width: $mobile-width-only) {
     font-size: 20px;

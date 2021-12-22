@@ -29,6 +29,10 @@
   font-size: 36px;
   line-height: 140%;
   margin: 0 0 20px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 34px;
+  }
 }
 
 .about-company p {
@@ -41,6 +45,10 @@
 
 .about-company p:last-child {
   margin: 0;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 0 34px;
+  }
 }
 
 .about-company__button {

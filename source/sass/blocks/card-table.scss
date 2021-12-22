@@ -14,4 +14,8 @@
 
 .card-table__icon-wrapper {
   margin: 0 0 20px 0;
+
+  @media (max-width: $tablet-width-max) {
+   margin: 0;
+  }
 }

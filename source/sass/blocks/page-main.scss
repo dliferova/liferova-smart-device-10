@@ -37,6 +37,10 @@
   margin: 0 auto;
   padding: 109px 0;
 
+  @media (max-width: $tablet-width-max) {
+    padding: 54px 0 81px;
+  }
+
   @media (max-width: $mobile-width-only) {
     max-width: 290px;
     padding: 37px 0 65px;
@@ -47,6 +51,10 @@
 .page-main__advantages {
   margin-bottom: 110px;
 
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 72px;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin-bottom: 60px;
   }
@@ -56,6 +64,10 @@
   background-color: $dark-background;
   padding: 93px 0 107px;
 
+  @media (max-width: $tablet-width-max) {
+    padding: 50px 0 34px;
+  }
+
   @media (max-width: $mobile-width-only) {
     padding: 53px 0 64px;
   }
@@ -63,11 +75,15 @@
 
 .page-main__feedback {
   background-color: $main-blue;
-  min-height: 670px;
+  min-height: 663px;
   padding: 93px 0 45px;
   position: relative;
   z-index: 4;
   overflow: hidden;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 79px 0 40px;
+  }
 }
 
 .page-main__feedback:before {
