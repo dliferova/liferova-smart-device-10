@@ -38,7 +38,7 @@
   padding: 109px 0;
 
   @media (max-width: $tablet-width-max) {
-    padding: 54px 0 81px;
+    padding: 54px 0 89px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -52,7 +52,7 @@
   margin-bottom: 110px;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 72px;
+    margin-bottom: 58px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -65,7 +65,7 @@
   padding: 93px 0 107px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 50px 0 34px;
+    padding: 50px 0 35px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -86,6 +86,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    min-height: 640px;
     padding: 30px 0 40px;
   }
 }

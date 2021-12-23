@@ -7,7 +7,7 @@
   padding: 40px 43px 49px;
 
   @media (max-width: $tablet-width-max) {
-    min-height: auto;
+    min-height: 233px;
     padding: 24px 23px 20px;
   }
 
@@ -43,6 +43,10 @@
   line-height: 135%;
   color: $text-grey-color;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    letter-spacing: 0.3px;
+  }
 }
 
 .card-item__icon {
