@@ -118,6 +118,9 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
+    column-gap: 0;
+    row-gap: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -160,6 +163,12 @@
   color: $ordinary-white;
 }
 
+.feedback-form__field-item {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 30px;
+  }
+}
+
 .feedback-form__field-item_theme_textarea {
   grid-area: textarea;
 }
@@ -171,6 +180,7 @@
 .feedback-form__field-item_theme_privacy {
   @media (max-width: $mobile-width-only) {
     order: 1;
+    margin: 0;
   }
 }
 
@@ -179,6 +189,10 @@
   outline: 1px solid $ordinary-white;
   width: 100%;
   margin: 0 0 20px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
 }
 
 //Форма
