@@ -83,47 +83,47 @@
   width: 63px;
   height: 63px;
   background-color: $main-blue;
-  background-image: url("/img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .vertical-cards-list__link_theme_manufacturer {
-  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-1.jpg");
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-1.jpg");
 
   @media (max-width: $tablet-width-max) {
     background-size: 100% 256px;
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-1-tablet.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-1-tablet.jpg");
   }
 
   @media (max-width: $mobile-width-only) {
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-1-mob.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-1-mob.jpg");
   }
 }
 
 .vertical-cards-list__link_theme_mount {
-  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-2.jpg");
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-2.jpg");
 
   @media (max-width: $tablet-width-max) {
     background-size: 100% 256px;
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/prmo-2-tablet.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/prmo-2-tablet.jpg");
   }
 
   @media (max-width: $mobile-width-only) {
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-2-mob.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-2-mob.jpg");
   }
 }
 
 .vertical-cards-list__link_theme__light-equipment {
-  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-3.jpg");
+  background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-3.jpg");
 
   @media (max-width: $tablet-width-max) {
     background-size: 100% 256px;
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/prmo-3-tablet.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/prmo-3-tablet.jpg");
   }
 
   @media (max-width: $mobile-width-only) {
-    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("/img/promo-3-mob.jpg");
+    background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-3-mob.jpg");
   }
 }
