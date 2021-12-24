@@ -14,10 +14,25 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: flex-start;
     max-width: 290px;
     min-height: 232px;
-    padding: 25px 12px 20px 25px;
+    padding: 25px 4px 18px 25px;
+    margin:  0 0 27px;
+  }
+}
+
+.card-item:last-child {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
+}
+
+.card-item br {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }
 
@@ -34,6 +49,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    margin: 0 0 9px;
     font-size: 20px;
   }
 }

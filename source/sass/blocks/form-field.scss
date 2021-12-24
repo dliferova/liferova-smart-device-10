@@ -61,6 +61,10 @@
   &:hover {
     color: $main-blue-darker;
   }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
 }
 
 .form-field__pseudo-check-input {

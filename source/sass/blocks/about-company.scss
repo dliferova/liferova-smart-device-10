@@ -35,6 +35,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    margin: 0 0 24px;
     font-size: 28px;
   }
 }
@@ -44,6 +45,11 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 537px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 537px;
+    margin: 0 0 30px;
   }
 }
 

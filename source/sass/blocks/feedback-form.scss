@@ -64,8 +64,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    max-width: 280px;
-    width: 280px;
+    max-width: 290px;
+    width: 290px;
     margin: 0 auto;
   }
 }
@@ -173,7 +173,7 @@
 
 .feedback-form__field-item {
   @media (max-width: $mobile-width-only) {
-    margin: 0 0 30px;
+    margin: 0 0 32px;
   }
 }
 
