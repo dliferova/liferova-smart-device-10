@@ -5,13 +5,12 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 740px;
+    width: auto;
     padding: 0 10px;
     margin: 0 auto;
   }
 
   @media (max-width: $mobile-width-only) {
-    max-width: 310px;
     padding: 0 10px;
-    margin: 0 auto;
   }
 }

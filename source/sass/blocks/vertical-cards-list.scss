@@ -97,7 +97,11 @@
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-1-tablet.jpg");
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: 321px) and (max-width: 767px) {
+    background-size: cover;
+  }
+
+  @media (max-width: 320px) {
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-1-mob.jpg");
   }
 }
@@ -110,7 +114,11 @@
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/prmo-2-tablet.jpg");
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: 321px) and (max-width: 767px) {
+    background-size: cover;
+  }
+
+  @media (max-width: 320px) {
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-2-mob.jpg");
   }
 }
@@ -123,7 +131,11 @@
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/prmo-3-tablet.jpg");
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: 321px) and (max-width: 767px) {
+    background-size: cover;
+  }
+
+  @media (max-width: 320px) {
     background-image: linear-gradient(rgba($dark-background, 0.4), rgba($dark-background, 0.4)), url("../img/promo-3-mob.jpg");
   }
 }

@@ -7,9 +7,10 @@
 
   @media (max-width: $mobile-width-only) {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     row-gap: 0;
+    flex-wrap: wrap;
   }
 }
 

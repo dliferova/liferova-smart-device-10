@@ -42,8 +42,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    max-width: 290px;
     padding: 37px 0 65px;
+    max-width: 610px;
     margin: 0 auto;
   }
 }
@@ -69,7 +69,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 53px 0 34px;
+    padding: 53px 15px 34px;
   }
 }
 

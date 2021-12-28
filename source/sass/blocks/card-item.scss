@@ -23,7 +23,7 @@
 }
 
 .card-item:last-child {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: 320px) {
     margin: 0;
   }
 }
