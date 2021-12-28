@@ -76,6 +76,34 @@ const feedbackCloseModalButton = document.querySelector('.feedback-form__modal-c
 const modalWrapper = document.querySelector('.modal');
 const body =  document.querySelector('.page__body');
 
+// https://uxdesign.cc/how-to-trap-focus-inside-modal-to-make-it-ada-compliant-6a50f9a70700
+const focusableElements =
+  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+const firstFocusableElement = modalWrapper.querySelectorAll(focusableElements)[0];
+const focusableContent = modalWrapper.querySelectorAll(focusableElements);
+const lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+document.addEventListener('keydown', function(e) {
+  let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+
+  if (!isTabPressed) {
+    return;
+  }
+
+  if (e.shiftKey) {
+    if (document.activeElement === firstFocusableElement) {
+      lastFocusableElement.focus();
+      e.preventDefault();
+    }
+  } else {
+    if (document.activeElement === lastFocusableElement) {
+      firstFocusableElement.focus();
+      e.preventDefault();
+    }
+  }
+});
+
 let isModalOpened = false;
 
 const modalClose = () => {
