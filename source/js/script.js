@@ -50,7 +50,11 @@ accordionItems.forEach(item => {
   item.classList.remove('accordion-item_nojs');
   item.classList.add('accordion-item_closed');
   item.addEventListener('click', (evt) => {
-    onItemClick(item)
+    const contentElement = item.querySelector('.accordion-item__content')
+    // если кликнули не на контентную область элемента аккордеона
+    if (evt.composedPath().find(el => el === contentElement) === undefined) {
+      onItemClick(item)
+    }
   })
 })
 
