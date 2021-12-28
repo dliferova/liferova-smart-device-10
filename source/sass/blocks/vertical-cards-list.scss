@@ -29,7 +29,7 @@
   }
 }
 
-.vertical-cards-list__item:last-child {
+.vertical-cards-list__item:last-child:nth-child(2n+1) {
   margin-right: 0;
 }
 
