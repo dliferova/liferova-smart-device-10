@@ -2,6 +2,7 @@
   @media (max-width: $mobile-width-only) {
     display: grid;
     grid-template-columns: 1fr max-content;
+    padding: 29px 15px;
   }
 }
 
