@@ -4,7 +4,7 @@ const phoneInputs = document.querySelectorAll("input[type=tel]");
 phoneInputs.forEach(input => {
   const phoneMask = IMask(
     input, {
-      mask: '+{7}(000)000-00-00'
+      mask: '+{7}(000)000-00-00',
     });
 
   input.addEventListener('focus', (evt) => {
@@ -74,17 +74,20 @@ const phoneInput = feedbackFormModal.querySelector('#phone-field');
 const questionInput = feedbackFormModal.querySelector('#question-field');
 const feedbackCloseModalButton = document.querySelector('.feedback-form__modal-close-button');
 const modalWrapper = document.querySelector('.modal');
+const body =  document.querySelector('.page__body');
 
 let isModalOpened = false;
 
 const modalClose = () => {
   isModalOpened = false;
+  body.classList.remove('overflow-hidden');
   modalWrapper.classList.toggle('modal_showed');
   feedbackFormModal.classList.add('feedback-form_modal_close');
 }
 
 const modalOpen = () => {
   isModalOpened = true;
+  body.classList.add('overflow-hidden');
   modalWrapper.classList.toggle('modal_showed');
   feedbackFormModal.classList.remove('feedback-form_modal_close');
   nameInput.focus();
